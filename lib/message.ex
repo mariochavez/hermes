@@ -7,6 +7,7 @@ defmodule Hermes.Message do
     From: #{message.from}
     MIME-Version: 1.0
     Content-type: "text/html"
+    Content-Transfer-Encoding: base64
     Subject: #{message.subject}
     Date: #{message.sent_on |> Chronos.Formatter.strftime("%b %0d, %Y %H:%M:%S")}
 
